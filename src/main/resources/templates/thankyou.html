@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" type="image/x-icon" th:href="@{assets/img/logo.png}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link th:href="@{/WebsitePage/style.css}" rel="stylesheet">
+    <title>Sanitas Care</title>
+  </head>
+  <body>
+
+    <header>
+        
+            <div class="home-logo">
+              <div class="logos">
+                <a href="#"><h1>Sanitas Care </h1> </a><span><img th:src="@{WebsitePage/images/logo.png}"></span>
+              </div>
+
+              <div class="home-info">
+
+                <div class="info-inner">
+                  <span class="icontop"><img src="images/phone-icon.png" alt="#"></span>
+                  <span class="iconcont">0812 925 4586</span>	
+               </div>
+
+               <div class="info-inner">
+                  <span class="icontop"><i class="fa fa-envelope"></i></span>
+                  <span class="iconcont">info@sanitas.com</span>	
+               </div>
+
+               <div class="info-inner">
+                  <span class="icontop"><i class="fa fa-clock-o"></i></span>
+                  <span class="iconcont">Daily: 7:00am - 8:00pm</span>	
+               </div>
+
+              </div>
+                
+
+            </div>
+            <!-- <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Process</a></li>
+                <li><a href="">Testimony</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <box-icon name='menu' color="whitesmoke" size="lg" id="menu"></box-icon> -->
+
+            
+
+        
+
+        <div class="search-bar">
+          <div id="custom-search-input">
+             <div class="input-group col-md-12">
+                <input type="text" class="form-control input-lg" placeholder="Search" />
+                <span class="input-group-btn">
+                <button class="btn btn-info btn-lg" type="button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+                </span>
+             </div>
+          </div>
+       </div>
+        
+    </header>
+
+
+
+    
+    <!-- Testimony -->
+
+    <section class="profiles">
+      <div>
+        <h1>You are Welcome</h1>
+      </div>
+        <div class="row">
+            <div class="test" style="margin-left: 180px;">
+                <div class="image">
+                    <img th:src="@{WebsitePage/images/medicalsmiles.jpeg}" alt="">
+                </div>
+                <div class="test-content">
+                    <h2>You have Successfully made an appointment, Thank you</h2>
+<!--                    <div class="icons">-->
+<!--                        <box-icon name='star' type='solid' color='whitesmoke'></box-icon>-->
+<!--                        <box-icon name='star' type='solid' color='whitesmoke'></box-icon>-->
+<!--                        <box-icon name='star' type='solid' color='whitesmoke'></box-icon>-->
+<!--                        <box-icon name='star' type='solid' color='whitesmoke'></box-icon>-->
+<!--                        <box-icon name='star-half' type='solid' color='whitesmoke'></box-icon>-->
+<!--                    </div>-->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with <box-icon name='heart' type='solid' color='whitesmoke'></box-icon>by Dev Lanre for Task 8</p>
+    </footer>
+
+    <script th:src="@{https://unpkg.com/boxicons@2.0.9/dist/boxicons.js}"></script>
+    <!-- boxIcon -->
+    <script src="../static/WebsitePage/app.js"></script>
+  </body>
+</html>

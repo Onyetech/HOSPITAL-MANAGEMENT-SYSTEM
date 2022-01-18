@@ -1,0 +1,603 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,600&display=swap");
+
+/* Base Styling */
+/* For universal selector*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.6%; /* eq to 10px */
+}
+
+body {
+ 
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.6rem; /* 1.6*10 = 16px */
+  color: white; /* Do this while styling li*/
+}
+
+/* h1,h2, p{
+    margin: 1.6rem 0;
+} */
+
+h1 {
+  font-weight: 800;
+  font-size: 3.6rem;
+  margin: 1.6rem 0;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 2.4rem;
+  margin: 1.6rem 0;
+}
+p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin: 1.6rem 0;
+}
+img {
+  width: 100%;
+  height: auto; /* makes the image become responsive */
+}
+/* Utility class */
+
+.row {
+  /* this to layout my content horizontally by default */
+  display: flex;
+  justify-content: space-between; /* Will work on the content of the row */
+  width: 80%;
+  align-items: center; /* Aligns the content of the .row centrally vertically */
+  margin: auto; /* Allows for the .row to be at the center cos of the 80% width */
+}
+section {
+  padding: 100px 0;
+}
+
+/* Hero section */
+
+header {
+  color: white;
+}
+
+.home-section {
+  height: 100vh; /* Takes enter viewport height */
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url("images/ehealth.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* even if you zoom, the image will still cover the etire page */
+  background-position: center;
+  color: white;
+}
+
+.home-logo{
+  display: flex;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+}
+
+.home-logo h1 {
+  font-size: 3.2rem;
+  color: #2023f1;
+  margin: 12px;
+  font-weight: lighter;
+}
+
+.home-logo .logos{
+  display: flex;
+}
+
+.home-logo .logos img{
+  width: 80%;
+  margin-top: 8px;
+}
+
+.home-info{
+  margin: 10px;
+}
+
+.info-inner {
+  float: left;
+  margin-top: 8px;
+}
+.info-inner span.icontop {
+  float: left;
+  /* background: #2023f1; */
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: normal;
+  padding: 10px 12px;
+  margin-right: 15px;
+  color: black;
+  font-size: 15px;
+  transition: ease all 1s;
+}
+
+.iconcont {
+  float: left;
+  font-size: 20px;
+  color: #000;
+  letter-spacing: -1px;
+  
+}
+
+
+.info-inner {
+  float: left;
+  margin-left: 50px;
+}
+.info-inner span.icontop img {
+width:100%;
+}
+
+
+
+#custom-search-input .form-control.input-lg {
+  border-radius: 50px;
+  overflow: hidden;
+  border: yellow;
+  float: left;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0px 25px 0 25px;
+  color: #222;
+  width: 200px;
+  height: 25px;
+  margin-left: 115rem;
+}
+
+.search-bar{
+  float: left;
+  width: 100%;
+  background: #2023f1;
+  justify-content: flex-end;
+}
+
+nav {
+  /* padding: 2% 8%; */
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
+  padding-left: 60px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+ /* About Section */
+.about-left,
+.about-middle,
+.about-right {
+  flex-basis: 50%;
+  padding: 1.6rem;
+}
+
+.about-row {
+  display: flex;
+  justify-content: space-between; 
+  width: 80%;
+  align-items: center; 
+  margin: auto; 
+  margin-top: 55px;
+  /* flex-basis: 10%; */
+}
+
+.about-row img{
+  padding: 10px;
+}
+
+.about-row h3{
+  margin-left: 30px;
+  font-size: medium;
+  font-weight: lighter;
+  color: #2023f1;
+}
+
+.about-middle h2{
+color: #2023f1;
+}
+
+
+/* =========================services======================== */
+
+/* About 2 */
+.about2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.855), rgba(243, 242, 245, 0)),
+  url("images/bookapp.jpg");
+  padding: 75px 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  float: left;
+  width: 100%;
+}
+
+.icon-service {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.icon-service img {
+  width: 60px;
+  align-items: center;
+  margin-right: 35px;
+}
+
+.inner-services{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* For Setting columns and numbers of column*/
+  grid-template-rows: repeat(2, 1fr);
+
+  grid-gap: 10px;
+  /* margin: auto; */
+  width: 90%;
+}
+
+.inner-services h4{
+  color: white;
+  text-align: center;
+  font-size: medium;
+}
+
+.inner-services p{
+  color: white;
+}
+
+
+
+
+.header-content {
+  width: 50%;
+  position: relative;
+  /* Absolulte takes element out of normal document flow */
+  top: 13%;
+  left: 8%;
+}
+
+form {
+  margin: 2.4rem 0;
+}
+
+input {
+  font-size: 1.8rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 1.2rem 0;
+  display: block;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  width: 50%;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+input::placeholder {
+  font-size: 1.3rem;
+  color: #ccc;
+}
+
+
+.btn {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 8px 16px;
+  display: inline-block;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+
+.about2 .card {
+  padding: 3rem 8rem;
+  color: #222;
+  background-color: #dcdcdc;
+  margin: 1.6rem;
+  text-align: center;
+}
+
+
+/* Testimony */
+
+.profiles {
+    background-color: #f7f7f7;
+    color: whitesmoke;
+    padding: 75px 0;
+}
+
+.profiles h1{
+  color: black;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profiles .test {
+    background-color: #2a53db;
+    padding: 4rem 8rem;
+    margin: 60px 50px;
+    border-radius: 40px;
+}
+
+.profiles .image {
+    height: 150px;
+    width: 150px;
+}
+.profiles img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+
+/* =======================Appointment form============================= */
+
+.appointment-form .form {
+  float: left;
+  width: 100%;
+  margin-right: 250px;
+  background-color: white;
+  border-radius: 10px;
+  
+}
+.appointment-form .form form {
+  float: left;
+  width: 100%;
+  margin: 0;
+}
+.appointment-form .form form fieldset {
+  float: left;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.appointment-form .form h3{
+  color: white;
+  background-color: #2023f1;
+  font-size: 25px;
+  /* margin-left: 30px; */
+  padding: 5px;
+  text-align: center;
+
+}
+.form-group {
+  float: left;
+  width: 100%;
+  margin: 0;
+}
+.form-group input, .form-group select {
+  float: left;
+  width: 100%;
+  border-radius: 0;
+  border: solid #ccc 1px;
+  padding: 8px 15px;
+  font-weight: 400;
+  font-size: 13px;
+  margin: 12px 0 0;
+  box-shadow: none;
+  color: #333;
+  height: 44px;
+}
+.form-group textarea {
+  float: left;
+  width: 100%;
+  border-radius: 0;
+  border: solid #ccc 1px;
+  padding: 8px 15px;
+  font-weight: 400;
+  font-size: 13px;
+  margin: 12px 0 0;
+  box-shadow: none;
+  color: #333;
+  height: 90px;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+box-shadow:none;
+}
+.select-section div.form-group:nth-child(1) {
+  float: left;
+  width: 49%;
+  margin-right: 2%;
+}
+.select-section div.form-group:nth-child(2) {
+  float: left;
+  width: 49%;
+}
+.center {
+  float: left;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.form-group button {
+  background: #2023f1;
+  border: none;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #fff;
+  padding: 8px 30px;
+  border-radius: 50px;
+  transition: ease all 1s;
+  font-weight: 600;
+  font-size: medium;
+}
+.form-group button:hover,.form-group button:focus {
+  background: linear-gradient(to right, #39b49a 0%, #1d86df 100%);
+}
+
+
+
+/* Contact */
+.contact .row {
+    justify-content: center;
+}
+
+.contact form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact form input {
+    width: 50%;
+}
+
+.contact textarea {
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    font-size: 1.3rem;
+    resize: none;
+    color: #ccc;
+    margin: 1.2rem 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Footer */
+footer {
+    height: 80px;
+    background-color: #222;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+}
+
+
+/* Media query */
+
+@media only screen and (max-width: 760px){
+  .row{
+    flex-direction: column;
+  }
+
+  header{
+    height: 210vh;
+  }
+
+  .header-content h1{
+    margin-left: 5rem;
+  }
+
+  .about{
+    padding: 50px 0;
+  }
+
+  .about a{
+    margin-left: 15rem;
+  }
+
+  .process h1{
+    text-align: center;
+  }
+
+  /* .process .box1,
+  .process .box1,
+  .process .box1{
+    text-align: center;
+  } */
+
+  .process-content h2, p{
+    text-align: center;
+  }
+
+  nav{
+    flex-direction: column;
+    position: relative;
+  }
+
+  nav box-icon{
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+  }
+
+  nav ul{
+    display: none;
+    background-color: white;
+
+  }
+
+  nav ul li{
+    display: block;
+  }
+
+  nav ul li a{
+    color: #222;
+  }
+
+  .header-content{
+    width: 100%;
+    top: 16%;
+    left: 0;
+    padding: 0 8px;
+  }
+
+  .about2-left{
+    text-align: center;
+  } 
+
+  .about h2{
+    text-align: center;
+    display: block;
+  }
+
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+  width: 80%;
+  display: block;
+  margin: 1.2rem auto;
+}
+
+.progress-bar{
+  display: none;
+}
+
+.process-content{
+  margin-top: 20px;
+}
+
+.testimony .test{
+  display: inline-block;
+  margin: 1.6rem 0;
+  text-align: center;
+  
+}
+
+.test .image{
+  margin: 1.2rem auto;
+}
+
+.contact form input,
+.contact textarea{
+  width: 100%;
+}
+
+
+
+
+}

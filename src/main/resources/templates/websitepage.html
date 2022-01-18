@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" th:href="@{assets/img/logo.png}">
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"-->
+<!--          integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="-->
+<!--          crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+    <link th:href="@{/WebsitePage/style.css}" rel="stylesheet">
+    <title>Sanitas Care</title>
+</head>
+<body>
+
+<header>
+
+    <div class="home-logo">
+        <div class="logos">
+            <a href="#"><h1>Sanitas Care </h1> </a><span><img th:src="@{WebsitePage/images/logo.png}"></span>
+        </div>
+
+        <div class="home-info">
+
+            <div class="info-inner">
+                <span class="icontop"><img th:src="@{WebsitePage/images/phone-icon.png}" alt="#"></span>
+                <span class="iconcont">0812 925 4586</span>
+            </div>
+
+            <div class="info-inner">
+                <span class="icontop"><i class="fa fa-envelope"></i></span>
+                <span class="iconcont">info@sanitas.com</span>
+            </div>
+
+            <div class="info-inner">
+                <span class="icontop"><i class="fa fa-clock-o"></i></span>
+                <span class="iconcont">Daily: 7:00am - 8:00pm</span>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Process</a></li>
+        <li><a href="">Testimony</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+    <box-icon name='menu' color="whitesmoke" size="lg" id="menu"></box-icon> -->
+
+
+
+
+
+    <div class="search-bar">
+        <div id="custom-search-input">
+            <div class="input-group col-md-12">
+                <input type="text" class="form-control input-lg" placeholder="Search" />
+                <span class="input-group-btn">
+                <button class="btn btn-info btn-lg" type="button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<!-- Home section -->
+
+<section class="home-section" style="background-image:url('WebsitePage/images/ehealth.jpg');">
+
+
+
+</section>
+
+<!-- end of home section -->
+
+<!-- About Section -->
+
+<!-- About -->
+<section class="about">
+    <div class="row">
+
+        <div class="about-middle">
+            <h2 >What we do</h2>
+            <h1>Clinic Services</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum officiis quis omnis, cum culpa nisi!
+            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum officiis quis omm officiis quis
+                omnis, cum culpa nisi!</p>
+            <a href="" class="btn">Learn More</a> <a href="" class="btn">Register</a>
+        </div>
+        <div class="about-left">
+            <!-- <h2>Fintech is all about excellence in the world of business</h2> -->
+            <img th:src="@{WebsitePage/images/material.jpg}"  alt="">
+        </div>
+    </div>
+
+    <div class="about-row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="service-widget">
+                <div class="post-media wow fadeIn">
+
+                    <img th:src="@{WebsitePage/images/clinic_01.jpg}" alt="" class="img-responsive">
+                </div>
+                <h3>Digital Control Center</h3>
+            </div>
+            <!-- end service -->
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="service-widget">
+                <div class="post-media wow fadeIn">
+                    <img th:src="@{WebsitePage/images/clinic_02.jpg}" alt="" class="img-responsive">
+                </div>
+                <h3>Hygienic Operating Room</h3>
+            </div>
+            <!-- end service -->
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="service-widget">
+                <div class="post-media wow fadeIn">
+                    <img th:src="@{WebsitePage/images/clinic_03.jpg}" alt="" class="img-responsive">
+                </div>
+                <h3>Specialist Physicians</h3>
+            </div>
+            <!-- end service -->
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="service-widget">
+                <div class="post-media wow fadeIn">
+                    <img th:src="@{WebsitePage/images/clinic_01.jpg}" alt="" class="img-responsive">
+                </div>
+                <h3>Digital Control Center</h3>
+            </div>
+            <!-- end service -->
+        </div>
+    </div>
+
+</section>
+
+<!-- About Section 2 -->
+
+<section class="about2">
+    <div id="service" class="services wow fadeIn">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+
+                    <div class="inner-services">
+                        <div class="other-services">
+                            <div class="serv">
+                                <span class="icon-service"><img th:src="@{WebsitePage/images/service-icon1.png}" alt="#" /></span>
+                                <h4>PREMIUM FACILITIES</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                            <div class="serv">
+                                <span class="icon-service"><img th:src="@{WebsitePage/images/service-icon2.png}" alt="#" /></span>
+                                <h4>LARGE LABORATORY</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                            <div class="serv">
+                                <span class="icon-service"><img th:src="@{WebsitePage/images/service-icon3.png}" alt="#" /></span>
+                                <h4>DETAILED SPECIALIST</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                            <div class="serv">
+                                <span class="icon-service"><img th:src="@{WebsitePage/images/service-icon4.png}" alt="#" /></span>
+                                <h4>CHILDREN CARE CENTER</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                            <div class="serv">
+                                <span class="icon-service"><img th:src="@{WebsitePage/images/service-icon5.png}" alt="#" /></span>
+                                <h4>FINE INFRASTRUCTURE</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                            <div class="serv">
+                                <span class="icon-service"><img th:src="@{WebsitePage/images/service-icon6.png}" alt="#" /></span>
+                                <h4>ANYTIME BLOOD BANK</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="appointment-form">
+                        <!-- <h3><span>+</span> Book Appointment</h3> -->
+                        <div class="form">
+                            <form th:action="@{/appointmentWeb}" th:Object="${appointment}" method="POST">
+
+                                <fieldset>
+                                    <h3><span>+</span> Book Appointment</h3>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <input type="text" th:field="*{patientName}" id="name" placeholder="Your Name" required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <input type="email" th:field="*{patientEmail}" placeholder="Email Address" id="email" required/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 select-section">
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <!-- <select class="form-control">
+                                                   <option>Day</option>
+                                                   <option>Sunday</option>
+                                                   <option>Monday</option>
+                                                </select> -->
+                                                <input type="date" th:field="*{dateOfAppointment}" placeholder="Date" required/>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="time" th:field="*{timeOfMeeting}" min="07:00" max="18:00" required>
+<!--                                                <select class="form-control">-->
+<!--                                                    <option>Time</option>-->
+<!--                                                    <option>AM</option>-->
+<!--                                                    <option>PM</option>-->
+<!--                                                </select>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <option>Doctor Name</option>
+                                                    <option>Mr.XYZ</option>
+                                                    <option>Mr.ABC</option>
+                                                    <option>Any Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <textarea rows="4" id="textarea_message" th:field="*{message}" class="form-control" placeholder="Your Message..."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <div class="center"><button type="submit">Submit</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Testimony -->
+
+<section class="profiles">
+    <div>
+        <h1>Our Specialist</h1>
+    </div>
+    <div class="row">
+        <div class="test">
+            <div class="image">
+                <img th:src="@{WebsitePage/images/doctor_01.jpg}" alt="">
+            </div>
+            <div class="test-content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus sint error aperiam maiores nisi cupiditate, ullam quo qui necessitatibus odio!</p>
+                <h2>Dr. Ben Joe</h2>
+<!--                <div class="icons">-->
+<!--                    <box-icon name='star' type='solid' color='whitesmoke'></box-icon>-->
+<!--                    <box-icon name='star' type='solid' color='whitesmoke'></box-icon>-->
+<!--                    <box-icon name='star' type='solid' color='whitesmoke'></box-icon>-->
+<!--                    <box-icon name='star' type='solid' color='whitesmoke'></box-icon>-->
+<!--                    <box-icon name='star-half' type='solid' color='whitesmoke'></box-icon>-->
+<!--                </div>-->
+            </div>
+        </div>
+
+        <div class="test">
+            <div class="image">
+                <img th:src="@{WebsitePage/images/doctor_02.jpg}" alt="">
+            </div>
+            <div class="test-content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus sint error aperiam maiores nisi cupiditate, ullam quo qui necessitatibus odio!</p>
+                <h2>Dr. Sarah Bakes</h2>
+<!--                <div class="icons">-->
+<!--                    <box-icon name='star' type='solid' color='whitesmoke'></box-icon>-->
+<!--                    <box-icon name='star' type='solid' color='whitesmoke'></box-icon>-->
+<!--                    <box-icon name='star' type='solid' color='whitesmoke'></box-icon>-->
+<!--                    <box-icon name='star' type='solid' color='whitesmoke'></box-icon>-->
+<!--                    <box-icon name='star-half' type='solid' color='whitesmoke'></box-icon>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+
+<section class="contact">
+    <div class="row">
+        <h1>Feedback form</h1>
+    </div>
+    <div class="row">
+        <form>
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your email">
+            <textarea>Enter your message</textarea>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>Made with <box-icon name='heart' type='solid' color='whitesmoke'></box-icon>by Dev Lanre for Task 8</p>
+</footer>
+
+<script th:src="@{https://unpkg.com/boxicons@2.0.9/dist/boxicons.js}"></script>
+<!-- boxIcon -->
+<script th:src="@{WebsitePage/app.js}"></script>
+</body>
+</html>
